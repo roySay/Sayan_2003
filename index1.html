@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Online Food Delivery Services|| MyOnlineFoodService.com</title>
+    
+
+</head>
+<style>
+    *{
+    margin:0;
+    padding:0;
+}
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --navbar-height:59px;
+}
+#navbar{
+    display:flex;
+    align-items:center;
+    position:sticky;
+    top:0px;
+    
+
+}
+
+#logo{
+    margin:3px 4px;
+}
+#logo img{
+    height:104px;
+    margin:-81px -1px;
+    
+}
+
+#navbar ul{
+    display:flex;
+
+}
+#navbar::before{
+    content:"";
+    background-color: black;
+    position:absolute;
+    top:0px;
+    left:0px;
+    height:100%;
+    width:100%;
+    z-index: -1;
+    opacity:0.4
+}
+#navbar ul li{
+    list-style:none;
+    font-style:2.3rem;
+    
+}
+#navbar ul li a{
+    color:white;
+    display:block;
+    padding:3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    
+}
+
+#navbar ul li a:hover{
+    color:white;
+    background-color: black;
+    
+}
+#home{
+    display:flex;
+    flex-direction: column;
+    padding:27px 210px;
+    height:504px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content:"";
+    position:absolute;
+    background: url('https://media.istockphoto.com/id/922783734/photo/assorted-indian-recipes-food-various.jpg?s=1024x1024&w=is&k=20&c=samPmisz6bQ-oS6PxnbAZZOgK1aFTIPKbiK8s4PsRxU=')no-repeat center center/cover;
+    height:552px;
+    width:100%;
+    top:0px;
+    left:0px;
+    z-index: -1;
+    opacity:0.89
+    }
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#services{
+    margin:34px;
+    display:flex;
+}
+#services .box{
+    border:2px solid brown;
+    padding:34px;
+    margin:17px 18px;
+    border-radius:23px;
+    background:#f2f2f2;
+}
+
+#services .box img{
+    height:160px;
+    display:block;
+    margin:auto;
+}
+#services .box p{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.h-primary{
+    font-size: 3.8rem;
+    padding:12px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+
+}
+.h-secondary{
+    font-size: 2.8rem;
+    padding:12px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+
+
+.btn{
+    padding:6px 20px;
+    border:2px solid white;
+    background-color:brown;
+    color:white;
+    margin:17px;
+    font-size:1.5rem ;
+    cursor:pointer;
+}
+.center{
+    text-align: center;
+}
+#clients-section{
+    height:344px;
+    position:relative;
+}
+
+#clients{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item{
+    padding:34px;
+}
+
+#clients img{
+    height:140px;
+    }
+
+#client-section::before{
+    content:"";
+    position:absolute;
+    background: url('https://media.istockphoto.com/id/1364752240/photo/many-colorful-organic-dried-vibrant-indian-food-spices-in-metal-measuring-dried-food-scoops.jpg?s=1024x1024&w=is&k=20&c=hYTZOAV8C7PcusmzWyK03YxBfHw-CSUk_T5U0X2M0_g=')no-repeat center center/cover;
+    height:30%;
+    width:100%;
+    z-index:-1;
+    opacity:0.4;
+}
+
+#contact{
+    position:relative;
+}
+#contact::before{
+    content:"";
+    position:absolute;
+    height:100%;
+    width:100%;
+    z-index:-1;
+    opacity:0.7;
+    background: url('https://media.istockphoto.com/id/1467776703/vector/customer-service-hotline-operators-consult-customers-with-headsets-on-laptop.jpg?s=1024x1024&w=is&k=20&c=kpNaSe2nuImzwNIYgJBgznPnvFl7R-XOtI_4c9AM-hw=') no-repeat center center/cover;
+}
+
+#Contact-box{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding-bottom:34px;
+}
+#Contact-box form{
+    width:40%;
+}
+#Contact-box input,
+#Contact-box textarea{
+    width:100%;
+    padding:1.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+
+}
+#Contact-box label{
+    font-size: 1.5rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+}
+footer{
+    background:black;
+    color:white;
+    padding: 9px 20px;
+}
+@media screen and (max-width:600px)
+{
+    #navbar{
+    flex-direction: column;
+}
+#navbar ul li a{
+    font-size: 2rem;
+    padding:63px 23px;
+}
+#home{
+    height:445px;
+    padding:57px 101px;
+}
+#home::before{
+    height:541px;
+}
+#home p{
+    font-size: 13px;
+}
+#services{
+    flex-direction: column;
+}
+
+#client{
+    overflow:hidden;
+}
+#h.primary{
+    font-size: 26px;
+}
+.btn{
+    font-size:30px ;
+    padding: 9px 25px;
+}
+#clients{
+    flex:wrap;
+    
+}
+#clients img{
+    width:71px;
+    padding:13px 13px;
+    height:auto;
+}
+#contact-box form{
+    width:40%;
+} 
+}
+
+</style>
+<body>
+
+<nav id="navbar">
+    <div id="logo">
+        <img src="https://media.istockphoto.com/id/1095440236/vector/scooter-delivery-services-logo-design-courier-logo-design-template.jpg?s=1024x1024&w=is&k=20&c=NAQTLir2xC2GUJ2KfYrGs9yfnaRlOOqVcEuAqA7i4MA=">
+    </div>
+    <ul>
+        
+        <li class="item"><a href="#">Home</a></li>
+        <li class="item"><a href="#">Services</a></li>
+        <li class="item"><a href="#">About Us</a></li>
+        <li class="item"><a href="#">Contact Us</a></li>
+        <li class="item"><a href="#"></a></li>
+
+
+    </ul>
+</nav>
+<section id="home">
+    <h1 class="h-primary"><b>Online Food Delivery</b></h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique officiis necessitatibus ad qui illo architecto</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere voluptatem </p>
+    <button class="btn">Order now</button>
+</section>
+<section class="services-container">
+    <h1 class="h-primary center">Our Services</h1>
+    <div id="services">
+        <div class="box">
+            <img src="https://cdn.pixabay.com/photo/2017/09/22/19/48/tomato-2776824_1280.jpg" alt="">
+
+            <h2 class="h-secondary center">Food Ordering</h2>
+            <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas earum doloribus vitae rem dolorem in placeat 
+                sunt neque et! Qui tempora veniam eos natus porro. Ut unde, 
+                magni veritatis itaque laudantium labore harum doloremque!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse,
+                 accusamus sint est velit nam commodi, sit deleniti doloribus id ducimus animi enim mollitia!</p>
+        </div>
+        <div class="box">
+            <img src="https://media.istockphoto.com/id/1407232682/photo/selective-focus-of-delicious-mutton-curry.jpg?s=1024x1024&w=is&k=20&c=sC-dNjeQc4D1gG56w_O8sNhGWDox-7l4zleL25bMeGQ=" alt="">
+
+            <h2 class="h-secondary center">Food Catering</h2>
+            <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas earum doloribus vitae rem dolorem in placeat 
+                sunt neque et! Qui tempora veniam eos natus porro. Ut unde, 
+                magni veritatis itaque laudantium labore harum doloremque!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, accusamus sint est velit nam commodi, 
+            sit deleniti doloribus id ducimus animi enim mollitia!</p>
+        </div>
+        <div class="box">
+            <img src="https://cdn.pixabay.com/photo/2017/06/02/11/49/still-life-2366084_1280.jpg" alt="">
+
+            <h2 class="h-secondary center">Bulk Ordering</h2>
+            <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas earum doloribus vitae rem dolorem in placeat 
+                sunt neque et! Qui tempora veniam eos natus porro. Ut unde, 
+                magni veritatis itaque laudantium labore harum doloremque!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, accusamus sint est velit nam commodi,
+                 sit deleniti doloribus id ducimus animi enim mollitia!</p>
+        </div>
+    </div>
+</section>
+<section id="client-section">
+    <h1 class="h-primary center">Our Clients</h1>
+    <div id="clients">
+        <div class="client-item">
+            <img src="https://media.istockphoto.com/id/1383510053/photo/twitter-3d-logo-3d-render-image-illustration.jpg?s=1024x1024&w=is&k=20&c=LB6PLFtLNWA9RlplEt_j0ppp0Z6Xr5D-ldGXit0kB6Y=" alt="Our Clients">
+        </div>
+        <div class="client-item">
+            <img src="https://media.istockphoto.com/id/1415832512/photo/tech.jpg?s=1024x1024&w=is&k=20&c=HMNt2kHGsz4Mb3kr1ga42OXb8FTulijRzIMpbtllZdA=" alt="Our Clients">
+        </div>
+        <div class="client-item">
+            <img src="https://media.istockphoto.com/id/1318661276/vector/design-brand-overlapping-one-line-colour.jpg?s=1024x1024&w=is&k=20&c=7Byn6of5gGYq_s6MbZhJQb-IDejiQzRxwrBIEW73sGg=" alt="Our Clients">
+            </div>
+         <div class="client-item">
+            <img src="https://media.istockphoto.com/id/1445158524/vector/vinyl-record-music-vector-with-vinyl-record-word.jpg?s=1024x1024&w=is&k=20&c=fGlCv9wMRHefDQ9tjf3OEtEcHINn_8PFvNc34GC6jr0=" alt="Our Clients">
+        </div>
+    </div>
+</section>
+<section id="contact">
+    <h1 class="h-primary center">Contact Us</h1>
+    <div id="Contact-box">
+       <form action="">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" placeholder="Enter your name">
+        </div>
+        <div class="form-group">
+            <label for="name">Email:</label>
+            <input type="email" name="name" id="name" placeholder="Enter your Email">
+        </div>
+        <div class="form-group">
+            <label for="name">Phone Number:</label>
+            <input type="phone" name="name" id="name" placeholder="Enter your Phone">
+        </div>
+        <div class="form-group">
+            <label for="message">Message:</label>
+           <textarea name="message" id="message" cols="18" rows="18"></textarea>
+        </div>
+       </form> 
+    </div>
+</section>
+<footer>
+    <div class="center">
+        copyright &copy; MyOnlineFoodrevice.com. All Rights are Reserved.
+    </div>
+</footer>
+</body>
+</html>
